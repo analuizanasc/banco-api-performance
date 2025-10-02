@@ -1,7 +1,7 @@
 import http from 'k6/http'
 import { sleep, check } from 'k6'
-//open() traz em string o que está em um arquivo
-//json.parse transforma em objeto
+//open() brings the string from the file
+//json.parse transfom to a object
 const postLogin = JSON.parse(open('../fixtures/postLogin.json'))
 
 export const options = {
